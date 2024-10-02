@@ -1,0 +1,10 @@
+streamlit==1.37.1
+google-api-python-client
+google-auth
+google-auth-oauthlib
+requests
+moviepy
+sqlalchemy
+langchain
+langchain-google-genai
+streamlit_extras
