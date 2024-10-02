@@ -8,7 +8,7 @@ import time
 
 # Initialize MongoDB Client
 def get_database():
-    client = MongoClient(os.getenv("MONGODB_URI"))  # Ensure MONGODB_URI is set in your environment
+    client = MongoClient(os.getenv("MONGODB_URI"))  
     return client["course_copilot_db"]
 
 db = get_database()
