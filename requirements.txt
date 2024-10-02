@@ -8,3 +8,5 @@ sqlalchemy
 langchain
 langchain-google-genai
 streamlit_extras
+bcrypt
+pymongo
