@@ -2,6 +2,12 @@
 import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
 
+@st.cache_resource
+def init_connection():
+    return pymongo.MongoClient(**st.secrets["mongo"])
+
+client = init_connection()
+
 # Set up the Streamlit page configuration
 st.set_page_config(page_title="EduPilot",initial_sidebar_state="collapsed")
 st.markdown(
